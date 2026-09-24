@@ -74,4 +74,20 @@ That’s it — the workflow takes care of the rest. 🌟
 - 📞 Phone: [+62 811-8382-399](tel:+62811838399)
 - 💼 LinkedIn: [Alexa Serrafona Juliet](https://www.linkedin.com/in/alexa-serrafona-juliet/)
 
+## 👥 Team Members & Contributors
+
+This portfolio was created as a group assignment. Add each team member’s name
+and student ID (NIM) below:
+
+| Name | NIM |
+| --- | --- |
+| Alexa Serrafona Juliet | _Add NIM_ |
+| _Add team member name_ | _Add NIM_ |
+| _Add team member name_ | _Add NIM_ |
+
+To add more members, copy the last table row and replace the placeholder text.
+For someone to appear automatically in GitHub’s **Contributors** section, they
+also need to contribute through a commit or pull request using their own
+GitHub-authenticated account.
+
 Made with intention, curiosity, and a little bit of coral energy. 🪸
