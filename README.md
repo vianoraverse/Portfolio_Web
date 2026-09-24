@@ -1,39 +1,77 @@
-# Alexa Serrafona Juliet — Portfolio
+# ✦ Alexa Serrafona Juliet — Portfolio
 
-Website portofolio single-page berbasis HTML, CSS, dan JavaScript tanpa framework.
+Welcome to Alexa’s personal portfolio — a clean, playful single-page website
+where **technology, communication, and visual storytelling** meet. 🌊
 
-## Menjalankan secara lokal
+Built with nothing but **HTML, CSS, and vanilla JavaScript** — no frameworks,
+no complicated setup, just a lightweight portfolio ready to shine. ✨
 
-Buka `index.html` langsung di browser, atau jalankan server lokal:
+## 🎨 What’s inside?
+
+- ✦ A bold introduction and personal summary
+- 💬 Public relations, UI/UX, visual communication, and digital content focus
+- 🧰 Professional skills and creative tools
+- 🚀 Experience and projects from GDGoC, AIESEC, and OSIS
+- 🎓 Education timeline
+- 📬 Clickable email, phone, and LinkedIn contact links
+- 📱 Responsive layout for desktop, tablet, and mobile
+- 🌐 Automatic GitHub Pages deployment with GitHub Actions
+
+## 🛠️ Tech stack
+
+- **HTML5** — semantic page structure
+- **CSS3** — responsive layout, animations, and sea-blue/coral visual theme
+- **Vanilla JavaScript** — mobile navigation, scroll reveals, and subtle interactions
+
+## 🧑‍💻 Run it locally
+
+Clone the repository, move into the project folder, and start a tiny local server:
 
 ```bash
+git clone https://github.com/vianoraverse/Portfolio_Web.git
+cd Portfolio_Web
 python3 -m http.server 8000
 ```
 
-Kemudian buka <http://localhost:8000>.
+Then open <http://localhost:8000> in your browser. 🚀
 
-## Deploy ke GitHub Pages
+You can also open `index.html` directly, but using a local server gives you a
+more accurate preview of the deployed site.
 
-### Opsi otomatis (direkomendasikan)
+## 🚢 Deploy to GitHub Pages
 
-Workflow `.github/workflows/pages.yml` akan melakukan deploy setiap kali ada push ke branch `main`.
-Setelah push pertama, buka **Settings → Pages**, pilih **GitHub Actions** sebagai source, lalu
-workflow akan meneruskan deployment secara otomatis.
+Deployment is already automated through:
 
-1. Buat repository GitHub baru, lalu salin semua file (`index.html`, `styles.css`, dan `script.js`) ke root repository.
-2. Commit dan push:
+```text
+.github/workflows/pages.yml
+```
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Create Alexa portfolio website"
-   git branch -M main
-   git remote add origin https://github.com/USERNAME/REPOSITORY.git
-   git push -u origin main
-   ```
+Whenever you push to the `main` branch, GitHub Actions will build and deploy the
+website automatically. 🎉
 
-3. Di GitHub, buka **Settings → Pages**.
-4. Pada **Build and deployment**, pilih **Deploy from a branch**, branch `main`, folder `/ (root)`, lalu **Save**.
-5. Situs akan tersedia di `https://USERNAME.github.io/REPOSITORY/`.
+### First-time setup
 
-Ganti tautan LinkedIn di `index.html` apabila URL profil LinkedIn yang digunakan berbeda.
+1. Open the repository’s **Settings → Pages**.
+2. Under **Build and deployment**, choose **GitHub Actions** as the source.
+3. Open the **Actions** tab and wait for **Deploy portfolio to GitHub Pages** to finish.
+4. Visit the live site:
+
+   <https://vianoraverse.github.io/Portfolio_Web/>
+
+### Push future updates
+
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
+
+That’s it — the workflow takes care of the rest. 🌟
+
+## 📬 Contact
+
+- 📧 Email: [serrafona@gmail.com](mailto:serrafona@gmail.com)
+- 📞 Phone: [+62 811-8382-399](tel:+62811838399)
+- 💼 LinkedIn: [Alexa Serrafona Juliet](https://www.linkedin.com/in/alexa-serrafona-juliet/)
+
+Made with intention, curiosity, and a little bit of coral energy. 🪸
