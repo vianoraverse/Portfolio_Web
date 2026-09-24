@@ -85,9 +85,4 @@ and student ID (NIM) below:
 | _Add team member name_ | _Add NIM_ |
 | _Add team member name_ | _Add NIM_ |
 
-To add more members, copy the last table row and replace the placeholder text.
-For someone to appear automatically in GitHub’s **Contributors** section, they
-also need to contribute through a commit or pull request using their own
-GitHub-authenticated account.
-
 Made with intention, curiosity, and a little bit of coral energy. 🪸
