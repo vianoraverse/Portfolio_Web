@@ -81,7 +81,7 @@ and student ID (NIM) below:
 
 | Name | NIM |
 | --- | --- |
-| Alexa Serrafona Juliet | _Add NIM_ |
+| Alexa Serrafona Juliet | 1251420014 |
 | _Add team member name_ | _Add NIM_ |
 | _Add team member name_ | _Add NIM_ |
 
