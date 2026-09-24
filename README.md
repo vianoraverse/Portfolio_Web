@@ -82,7 +82,7 @@ and student ID (NIM) below:
 | Name | NIM |
 | --- | --- |
 | Alexa Serrafona Juliet | 1251420014 |
-| _Add team member name_ | _Add NIM_ |
+| Vida Maulida Nurul Ihsan | 1251420011 |
 | _Add team member name_ | _Add NIM_ |
 
 Made with intention, curiosity, and a little bit of coral energy. 🪸
