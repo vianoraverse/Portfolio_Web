@@ -1,31 +1,34 @@
 # ✦ Alexa Serrafona Juliet — Portfolio
 
-Welcome to Alexa’s personal portfolio — a clean, playful single-page website
-where **technology, communication, and visual storytelling** meet. 🌊
+A playful little corner of the web for **people, projects, and ideas in progress**.
+This responsive portfolio brings together communication, visual storytelling, and technology—made with care, curiosity, and a touch of coral. 🪸
 
-Built with nothing but **HTML, CSS, and vanilla JavaScript** — no frameworks,
-no complicated setup, just a lightweight portfolio ready to shine. ✨
+**Live site:** [vianoraverse.github.io/Portfolio_Web](https://vianoraverse.github.io/Portfolio_Web/)
 
-## 🎨 What’s inside?
+## 🌈 A quick tour
 
-- ✦ A bold introduction and personal summary
-- 💬 Public relations, UI/UX, visual communication, and digital content focus
-- 🧰 Professional skills and creative tools
-- 🚀 Experience and projects from GDGoC, AIESEC, and OSIS
-- 🎓 Education timeline
-- 📬 Clickable email, phone, and LinkedIn contact links
-- 📱 Responsive layout for desktop, tablet, and mobile
-- 🌐 Automatic GitHub Pages deployment with GitHub Actions
+- **A personal introduction** with a custom, locally stored profile photo
+- **Experience and field notes** with interactive category filters
+- **21 visual works** across four browsable collections:
+  - OSIS Humas — school-event and seasonal designs
+  - Tenxion / Luminox — event graphics
+  - PT Makara Mas — social-media content created during internship
+  - PT Pelangi Bintang Semesta — social-media content created during an ongoing internship
+- **Skills, education, and contact links**
+- **Responsive layouts**, keyboard-friendly controls, and reduced-motion support
 
-## 🛠️ Tech stack
+## 🧰 Built with
 
-- **HTML5** — semantic page structure
-- **CSS3** — responsive layout, animations, and sea-blue/coral visual theme
-- **Vanilla JavaScript** — mobile navigation, scroll reveals, and subtle interactions
+- Semantic **HTML**
+- Responsive **CSS**
+- Lightweight **vanilla JavaScript**
+- Locally stored, optimized **WebP** images
 
-## 🧑‍💻 Run it locally
+No framework, package install, or build step required.
 
-Clone the repository, move into the project folder, and start a tiny local server:
+## 🚀 Run it locally
+
+Clone the repo and start a small local web server:
 
 ```bash
 git clone https://github.com/vianoraverse/Portfolio_Web.git
@@ -33,56 +36,58 @@ cd Portfolio_Web
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000> in your browser. 🚀
+Open <http://localhost:8000> in your browser. A local server is recommended so image paths and page behavior match the deployed site.
 
-You can also open `index.html` directly, but using a local server gives you a
-more accurate preview of the deployed site.
+## 🖼️ Update the visual gallery
 
-## 🚢 Deploy to GitHub Pages
+Gallery images live in `assets/`. Each work is a `<figure class="gallery-card">` inside its project group in `index.html`. To add or replace a visual:
 
-Deployment is already automated through:
+1. Add an optimized image to `assets/` (WebP is preferred).
+2. Update the image source, intrinsic dimensions, and descriptive alternative text:
 
-```text
-.github/workflows/pages.yml
-```
+   ```html
+   <img
+     class="gallery-image"
+     src="assets/my-new-design.webp"
+     alt="Describe the visible design and the information it communicates"
+     width="1080"
+     height="1350"
+     loading="lazy"
+   />
+   ```
 
-Whenever you push to the `main` branch, GitHub Actions will build and deploy the
-website automatically. 🎉
+3. Edit the matching `<figcaption>` with an accurate title or context.
+4. Keep the work inside the correct `.gallery-project` group: `osis`, `tenxion`, `maja`, or `pbs`.
 
-### First-time setup
+Use specific alt text and factual captions. Avoid implying responsibilities or design roles that have not been confirmed. Original artwork is shown as supplied; historical social handles within an image are not changed. Current Maja account text uses [@maja.payment](https://www.instagram.com/maja.payment/).
 
-1. Open the repository’s **Settings → Pages**.
-2. Under **Build and deployment**, choose **GitHub Actions** as the source.
-3. Open the **Actions** tab and wait for **Deploy portfolio to GitHub Pages** to finish.
-4. Visit the live site:
+## ♿ Accessibility and motion
 
-   <https://vianoraverse.github.io/Portfolio_Web/>
+- Use the skip link and keyboard-operable navigation and filters.
+- Respect `prefers-reduced-motion`; decorative motion is minimized or disabled.
+- Give each meaningful image descriptive alt text.
 
-### Push future updates
+## 🌐 Deployment
 
-```bash
-git add .
-git commit -m "Update portfolio"
-git push origin main
-```
+GitHub Pages deployment is configured in `.github/workflows/pages.yml`. Push changes to `main` to trigger the workflow. The published site is:
 
-That’s it — the workflow takes care of the rest. 🌟
+<https://vianoraverse.github.io/Portfolio_Web/>
 
-## 📬 Contact
+## 📬 Say hello
 
-- 📧 Email: [serrafona@gmail.com](mailto:serrafona@gmail.com)
-- 📞 Phone: [+62 811-8382-399](tel:+62811838399)
-- 💼 LinkedIn: [Alexa Serrafona Juliet](https://www.linkedin.com/in/alexa-serrafona-juliet/)
+- Email: [serrafona@gmail.com](mailto:serrafona@gmail.com)
+- LinkedIn: [Alexa Serrafona Juliet](https://www.linkedin.com/in/alexa-serrafona-juliet/)
 
-## 👥 Team Members & Contributors
+## 🤝 Credits
 
-This portfolio was created as a group assignment. Add each team member’s name
-and student ID (NIM) below:
+Created as a group assignment by:
 
-| Name | NIM |
+| Contributor | NIM |
 | --- | --- |
 | Alexa Serrafona Juliet | 1251420014 |
 | Vida Maulida Nurul Ihsan | 1251420011 |
 | Giska Sisilia Putri | 1251420116 |
 
-Made with intention, curiosity, and a little bit of coral energy. 🪸
+---
+
+Made with intention, curiosity, and a little bit of coral energy. ✨

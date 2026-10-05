@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portofolio Alexa Serrafona Juliet — Informatics Engineering student with interests in public relations, UI/UX, visual communication, and digital content." />
+    <meta name="description" content="Alexa Serrafona Juliet is an Informatics Engineering student interested in public relations, UI/UX, visual communication, and digital content." />
+    <meta name="theme-color" content="#f5f2e9" />
     <title>Alexa Serrafona Juliet — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,155 +12,394 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="cursor-glow" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Back to top">
-        <span class="brand-mark">ASJ</span>
+      <a class="brand" href="#top" aria-label="Alexa Serrafona Juliet — home">
+        <span class="brand-mark" aria-hidden="true">ASJ<span>✳</span></span>
         <span class="brand-name">Alexa Serrafona Juliet</span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
         <span></span><span></span>
       </button>
-      <nav id="site-nav" class="site-nav" aria-label="Navigasi utama">
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+        <a href="#experience">Field notes</a>
+        <a href="#work">Visual work</a>
+        <a href="#skills">Toolkit</a>
+        <a href="#contact" class="nav-cta">Say hello <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero section-shell" id="about">
+    <main id="main">
+      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-line"></span> Portfolio / 2026</p>
-          <h1>Ideas made<br /><em>visible.</em></h1>
-          <p class="hero-description">
-            Hi, I’m <strong>Alexa Serrafona Juliet</strong> — an Informatics Engineering student
-            interested in bringing technology, communication, and meaningful visuals together.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#experience">Explore my journey <span>↓</span></a>
-            <a class="text-link" href="mailto:serrafona@gmail.com">serrafona@gmail.com <span>↗</span></a>
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Independent mind / Jakarta, ID</p>
+          <h1 id="hero-title">Ideas<br />with a little<br /><em>more feeling.</em></h1>
+          <div class="hero-bottom">
+            <p class="hero-description">
+              Hi, I’m <strong>Alexa Serrafona Juliet</strong> — an Informatics Engineering student
+              interested in bringing technology, communication, and meaningful visuals together.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#experience">Wander around <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="mailto:serrafona@gmail.com">Or just say hi <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </div>
-        <div class="hero-art reveal" aria-label="Alexa profile illustration">
-          <div class="art-ring ring-one"></div>
-          <div class="art-ring ring-two"></div>
-          <div class="art-card card-back"></div>
-          <div class="art-card card-front">
-            <span class="card-number">01</span>
-            <span class="card-label">COMMUNICATION<br />× TECHNOLOGY</span>
+        <div class="hero-art reveal" aria-label="Abstract artwork about communication and technology">
+          <div class="art-grid" aria-hidden="true"></div>
+          <div class="art-orbit orbit-one" aria-hidden="true"></div>
+          <div class="art-orbit orbit-two" aria-hidden="true"></div>
+          <div class="art-sun" aria-hidden="true"><span>✳</span></div>
+          <div class="art-card card-back" aria-hidden="true">
+            <span class="card-number">FIELD NOTE 01</span>
+            <span class="card-shape"></span>
+            <span class="card-label">A GOOD IDEA<br />TRAVELS FAR.</span>
+          </div>
+          <div class="art-card card-front" aria-hidden="true">
+            <span class="card-number">ALEXA / 2026</span>
+            <span class="card-stamp">CURIOUS<br />BY NATURE</span>
+            <span class="card-label">COMMUNICATION<br /><b>×</b> TECHNOLOGY</span>
             <span class="card-arrow">↗</span>
           </div>
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <span class="art-star star-one">✦</span>
-          <span class="art-star star-two">✦</span>
-          <span class="art-caption">Jakarta, Indonesia<br />04° 52′ S · 106° 49′ E</span>
+          <figure class="portrait-card">
+            <img
+              class="profile-photo"
+              src="assets/alexa-profile.webp"
+              alt="Alexa smiling and winking at the camera"
+              width="900"
+              height="1350"
+              fetchpriority="high"
+            />
+            <figcaption>HELLO, I’M ALEXA <span aria-hidden="true">✳</span></figcaption>
+          </figure>
+          <span class="art-caption">A collection of things<br />I’m learning as I go.</span>
+          <span class="art-aside" aria-hidden="true">MAKE<br />ROOM<br />FOR PLAY</span>
         </div>
-        <div class="scroll-cue"><span></span> Scroll to explore</div>
+        <a class="scroll-cue" href="#about"><span aria-hidden="true"></span> A little further down</a>
+        <span class="hero-index" aria-hidden="true">001—006</span>
       </section>
 
       <section class="marquee" aria-label="Areas of interest">
-        <div class="marquee-track">
-          <span>PUBLIC RELATIONS</span><i>✦</i><span>UI / UX</span><i>✦</i><span>VISUAL COMMUNICATION</span><i>✦</i><span>DIGITAL CONTENT</span><i>✦</i>
-          <span>PUBLIC RELATIONS</span><i>✦</i><span>UI / UX</span><i>✦</i><span>VISUAL COMMUNICATION</span><i>✦</i><span>DIGITAL CONTENT</span><i>✦</i>
+        <div class="marquee-track" aria-hidden="true">
+          <span>PUBLIC RELATIONS</span><i>✳</i><span>UI / UX</span><i>✳</i><span>VISUAL COMMUNICATION</span><i>✳</i><span>DIGITAL CONTENT</span><i>✳</i>
+          <span>PUBLIC RELATIONS</span><i>✳</i><span>UI / UX</span><i>✳</i><span>VISUAL COMMUNICATION</span><i>✳</i><span>DIGITAL CONTENT</span><i>✳</i>
         </div>
       </section>
 
-      <section class="section-shell intro-grid">
-        <div class="section-index">01 — / About</div>
+      <section class="section-shell intro-grid" id="about">
+        <div class="section-index"><span>01</span> / A small introduction</div>
         <div class="intro-content reveal">
-          <p class="section-kicker">Building connection through ideas</p>
+          <p class="section-kicker">A person, not a job title</p>
           <h2>Curious by nature,<br /><span>intentional by design.</span></h2>
           <p>
-            I enjoy working where stories and systems meet. From preparing event publications
-            to learning UI/UX principles, every experience has taught me to think structurally,
-            collaborate thoughtfully, and communicate with clarity.
+            I’m an Informatics Engineering student at UIN Syarif Hidayatullah Jakarta, interested
+            in public relations, publication, visual communication, and digital content. Through
+            event documentation and content preparation, I’m building both creative and technical
+            skills—and learning how thoughtful communication can make ideas easier to connect with.
           </p>
-          <div class="mini-facts">
-            <div><strong>4+</strong><span>Area of interest</span></div>
-            <div><strong>3</strong><span>Community experiences</span></div>
-            <div><strong>2</strong><span>Languages</span></div>
+          <div class="mini-facts" aria-label="A few quick facts">
+            <div><strong>04<span>+</span></strong><span>Areas of interest</span></div>
+            <div><strong>03</strong><span>Community experiences</span></div>
+            <div><strong>02</strong><span>Languages</span></div>
           </div>
+        </div>
+        <span class="margin-note" aria-hidden="true">currently collecting<br />good questions ✳</span>
+      </section>
+
+      <section class="experience-section" id="experience">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <div class="section-index"><span>02</span> / Field notes</div>
+            <div>
+              <p class="section-kicker">Work, campus, and things I’m learning</p>
+              <h2>Learning out<br /><em>in the world.</em></h2>
+            </div>
+          </div>
+          <div class="filter-bar" role="group" aria-label="Filter field notes">
+            <span class="filter-label">Browse by</span>
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Everything <span>10</span></button>
+            <button class="filter-button" type="button" data-filter="work" aria-pressed="false">Work</button>
+            <button class="filter-button" type="button" data-filter="community" aria-pressed="false">Community</button>
+            <button class="filter-button" type="button" data-filter="learning" aria-pressed="false">Learning</button>
+            <button class="filter-button" type="button" data-filter="training" aria-pressed="false">Training</button>
+            <button class="filter-button" type="button" data-filter="leadership" aria-pressed="false">Leadership</button>
+            <button class="filter-button" type="button" data-filter="organization" aria-pressed="false">Organization</button>
+          </div>
+          <p class="filter-status" aria-live="polite" aria-atomic="true"></p>
+          <div class="notes-grid">
+            <article class="note-card note-card-featured note-card-work reveal" data-category="work">
+              <div class="note-topline"><span class="note-number">NOTE 01</span><span class="note-stamp">20 JUL—28 AUG 2026</span></div>
+              <p class="item-type">Internship / Social media content</p>
+              <h3>Social Media<br />Content Intern</h3>
+              <p class="item-place">PT Makara Mas · Universitas Indonesia subsidiary · payment gateway &amp; information systems technology</p>
+              <p class="note-description">Managed Instagram content by designing posts, writing captions, researching ideas, and monitoring account performance.</p>
+              <p class="work-account"><a href="https://www.instagram.com/maja.payment/" target="_blank" rel="noreferrer">@maja.payment <span aria-hidden="true">↗</span></a></p>
+              <div class="tags"><span>Social media</span><span>Content design</span><span>Instagram</span></div>
+              <span class="note-doodle" aria-hidden="true">✳</span>
+            </article>
+            <article class="note-card note-card-work reveal" data-category="work">
+              <div class="note-topline"><span class="note-number">NOTE 02</span><span class="note-stamp">01 OCT 2026—PRESENT</span></div>
+              <p class="item-type">Internship / Ongoing</p>
+              <h3>Social Media<br />Content Intern</h3>
+              <p class="item-place">PT Pelangi Bintang Semesta · Started 1 October 2026</p>
+              <p class="note-description">Manage Instagram content by designing posts, writing captions, researching ideas, and monitoring account performance.</p>
+              <p class="work-account"><a href="https://www.instagram.com/pelangibintangsemesta?stkn=MWQ4ZHk3NHR4Mnl3MQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noreferrer">@pelangibintangsemesta <span aria-hidden="true">↗</span></a></p>
+              <div class="tags"><span>Social media</span><span>Content design</span><span>Instagram</span><span>Ongoing</span></div>
+              <span class="note-doodle" aria-hidden="true">✳</span>
+            </article>
+            <article class="note-card note-card-blue reveal" data-category="learning">
+              <div class="note-topline"><span class="note-number">NOTE 03</span><span class="note-stamp">10—21 AUG 2026</span></div>
+              <p class="item-type">Summer school / Participant</p>
+              <h3>The Second Global Youth Semiconductors and Artificial Intelligence Summer School</h3>
+              <p class="item-place">NTNU</p>
+              <p class="note-description">Participated in the 2026 summer school.</p>
+              <div class="tags"><span>Semiconductors</span><span>Artificial intelligence</span></div>
+              <span class="note-doodle" aria-hidden="true">↗</span>
+            </article>
+            <article class="note-card note-card-lime reveal" data-category="organization">
+              <div class="note-topline"><span class="note-number">NOTE 04</span><span class="note-stamp">JUL—AUG 2026</span></div>
+              <p class="item-type">Campus / Event committee</p>
+              <h3>PBAK Teknik<br />Informatika 2026</h3>
+              <p class="item-place">Committee member · PDD Division</p>
+              <p class="note-description">Served on the PDD division committee for the Informatics Engineering student orientation.</p>
+              <div class="tags"><span>Committee</span><span>PDD</span><span>Campus event</span></div>
+              <span class="note-doodle" aria-hidden="true">✳</span>
+            </article>
+            <article class="note-card note-card-training reveal" data-category="training">
+              <div class="note-topline"><span class="note-number">NOTE 05</span><span class="note-stamp">14—16 MAY 2026</span></div>
+              <p class="item-type">Short course / Training</p>
+              <h3>3 Days Powerful Public Speaking &amp; Personal Branding and Training Management</h3>
+              <p class="item-place">Coach Dr. Fahmi · Malang</p>
+              <p class="note-description">Three-day short course led by Coach Dr. Fahmi in Malang.</p>
+              <div class="tags"><span>Public speaking</span><span>Personal branding</span><span>Training management</span></div>
+              <span class="note-doodle" aria-hidden="true">✦</span>
+            </article>
+            <article class="note-card reveal" data-category="community">
+              <div class="note-topline"><span class="note-number">NOTE 06</span><span class="note-stamp">DEC 2025—PRESENT</span></div>
+              <p class="item-type">Experience / Community</p>
+              <h3>Google Developer Group<br />on Campus</h3>
+              <p class="item-place">UIN Syarif Hidayatullah Jakarta</p>
+              <p class="note-description">Actively participating in campus technology activities, digital learning, and community collaboration.</p>
+              <div class="tags"><span>Community</span><span>Technology</span><span>Collaboration</span></div>
+              <span class="note-doodle" aria-hidden="true">✳</span>
+            </article>
+            <article class="note-card note-card-blue reveal" data-category="learning">
+              <div class="note-topline"><span class="note-number">NOTE 07</span><span class="note-stamp">JAN—FEB 2026</span></div>
+              <p class="item-type">Project / Learning</p>
+              <h3>Weekly Class<br />UI/UX — GDGoC</h3>
+              <p class="item-place">UIN Jakarta 25.26</p>
+              <p class="note-description">Built a foundation in UI principles, UX thinking, and how design decisions shape interaction and usability.</p>
+              <div class="tags"><span>UI/UX</span><span>Visual Design</span><span>Usability</span></div>
+              <span class="note-doodle" aria-hidden="true">↗</span>
+            </article>
+            <article class="note-card note-card-lime reveal" data-category="leadership">
+              <div class="note-topline"><span class="note-number">NOTE 08</span><span class="note-stamp">DEC 2025</span></div>
+              <p class="item-type">Experience / Leadership</p>
+              <h3>AIESEC Future<br />Leaders WP 25</h3>
+              <p class="item-place">AIESEC in UIN Jakarta · Delegate</p>
+              <p class="note-description">Developed leadership awareness through communication, teamwork, youth engagement, and collaborative discussions.</p>
+              <div class="tags"><span>Leadership</span><span>Teamwork</span><span>Communication</span></div>
+              <span class="note-doodle" aria-hidden="true">✳</span>
+            </article>
+            <article class="note-card note-card-dark reveal" data-category="organization">
+              <div class="note-topline"><span class="note-number">NOTE 09</span><span class="note-stamp">2023—24</span></div>
+              <p class="item-type">Experience / Organization</p>
+              <h3>Public Relations<br />Division — OSIS</h3>
+              <p class="item-place">SMA Sulthon Aulia Boarding School</p>
+              <p class="note-description">Supported event communication and publication, handled photo and video documentation, and coordinated across divisions.</p>
+              <div class="tags"><span>Public Relations</span><span>Documentation</span><span>Publication</span></div>
+              <span class="note-doodle" aria-hidden="true">✦</span>
+            </article>
+            <article class="note-card note-card-activity reveal" data-category="organization">
+              <div class="note-topline"><span class="note-number">NOTE 10</span><span class="note-stamp">DATE NOT LISTED</span></div>
+              <p class="item-type">Activity / CV-listed</p>
+              <h3>Yearbook Sponsorship Division</h3>
+              <p class="item-place">Additional activity</p>
+              <p class="note-description">Listed in the CV’s activities. Dates and responsibilities were not specified.</p>
+              <div class="tags"><span>Activity</span><span>Publication</span></div>
+              <span class="note-doodle" aria-hidden="true">✳</span>
+            </article>
+          </div>
+          <p class="notes-footnote"><span aria-hidden="true">✳</span> Small steps count as part of the story, too.</p>
         </div>
       </section>
 
-      <section class="section-shell experience-section" id="experience">
-        <div class="section-heading reveal">
-          <div class="section-index">02 — / Experience & Projects</div>
-          <h2>Where I’ve<br /><em>been learning.</em></h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-meta"><span>Dec 2025 — Present</span><span class="status-dot"></span></div>
-            <div class="timeline-body">
-              <p class="item-type">Experience / Community</p>
-              <h3>Google Developer Group on Campus</h3>
-              <p class="item-place">UIN Syarif Hidayatullah Jakarta</p>
-              <p>Actively participating in campus technology activities, digital learning, and community collaboration.</p>
-              <div class="tags"><span>Community</span><span>Technology</span><span>Collaboration</span></div>
+      <section class="portfolio-gallery" id="work" aria-labelledby="work-title">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <div class="section-index"><span>03</span> / Visual work</div>
+            <div>
+              <p class="section-kicker">A little shelf for future projects</p>
+              <h2 id="work-title">Made with<br /><em>curiosity.</em></h2>
             </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-meta"><span>Jan 2026 — Feb 2026</span><span class="status-dot"></span></div>
-            <div class="timeline-body">
-              <p class="item-type">Project / Learning</p>
-              <h3>Weekly Class UI/UX — GDGoC</h3>
-              <p class="item-place">UIN Jakarta 25.26</p>
-              <p>Built a foundation in UI principles, UX thinking, and how design decisions shape interaction and usability.</p>
-              <div class="tags"><span>UI/UX</span><span>Visual Design</span><span>Usability</span></div>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-meta"><span>Dec 2025</span><span class="status-dot"></span></div>
-            <div class="timeline-body">
-              <p class="item-type">Experience / Leadership</p>
-              <h3>AIESEC Future Leaders WP 25</h3>
-              <p class="item-place">AIESEC in UIN Jakarta · Delegate</p>
-              <p>Developed leadership awareness through communication, teamwork, youth engagement, and collaborative discussions.</p>
-              <div class="tags"><span>Leadership</span><span>Teamwork</span><span>Communication</span></div>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-meta"><span>2023 — 2024</span><span class="status-dot"></span></div>
-            <div class="timeline-body">
-              <p class="item-type">Experience / Organization</p>
-              <h3>Public Relations Division — OSIS</h3>
-              <p class="item-place">SMA Sulthon Aulia Boarding School</p>
-              <p>Supported event communication and publication, handled photo and video documentation, and coordinated across divisions.</p>
-              <div class="tags"><span>Public Relations</span><span>Documentation</span><span>Publication</span></div>
-            </div>
-          </article>
+          </div>
+          <p class="gallery-intro">Browse four separate collections of school, event, and internship communication visuals.</p>
+          <div class="gallery-filters" role="group" aria-label="Filter visual work by project">
+            <span class="filter-label">Browse projects</span>
+            <button class="gallery-filter is-active" type="button" data-work-filter="all" aria-pressed="true">All projects <span>21</span></button>
+            <button class="gallery-filter" type="button" data-work-filter="osis" aria-pressed="false">OSIS Humas <span>4</span></button>
+            <button class="gallery-filter" type="button" data-work-filter="tenxion" aria-pressed="false">Tenxion / Luminox <span>6</span></button>
+            <button class="gallery-filter" type="button" data-work-filter="maja" aria-pressed="false">Maja · Internship <span>8</span></button>
+            <button class="gallery-filter" type="button" data-work-filter="pbs" aria-pressed="false">PBS · Internship <span>3</span></button>
+          </div>
+          <p class="gallery-filter-status" aria-live="polite" aria-atomic="true">Showing 21 visual works across 4 projects.</p>
+          <div class="gallery-projects">
+            <section class="gallery-project" data-project="osis" aria-labelledby="osis-gallery-title">
+              <div class="gallery-project-heading">
+                <h3 id="osis-gallery-title">OSIS Humas <span>01—04</span></h3>
+                <p>School-event and seasonal content from the OSIS Public Relations (Humas) division.</p>
+              </div>
+              <div class="gallery-grid">
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/expo-ekskul-2024.webp" alt="2024 Expo Ekskul poster with the theme Dream Big, Fly High, dated 7 August 2024 at Gedung Serbaguna SABS" width="1350" height="1800" loading="lazy" />
+                  <figcaption><span>Expo Ekskul 2024 · “Dream Big, Fly High”</span><span>7 Aug 2024 · SABS</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/food-bazaar-nusantara-2024.webp" alt="Illustrated Food Bazaar visual with the Nusantara Baru, Indonesia Maju theme and dates 15–16 August 2024" width="1800" height="1200" loading="lazy" />
+                  <figcaption><span>Food Bazaar · “Nusantara Baru, Indonesia Maju”</span><span>15–16 Aug 2024</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/idul-adha-greeting.webp" alt="Illustrated Eid al-Adha greeting with a group photo, lanterns, and playful animal illustrations" width="1800" height="1200" loading="lazy" />
+                  <figcaption><span>Idul Adha · Illustrated greeting</span><span>Seasonal content</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/berkah-ramadhan-sabs-sharing.webp" alt="Wide navy and gold Berkah Ramadhan and SABS Sharing banner with student activity photos and the @sabs_council Instagram handle" width="1800" height="600" loading="lazy" />
+                  <figcaption><span>Berkah Ramadhan · SABS Sharing</span><span>@sabs_council</span></figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="gallery-project" data-project="tenxion" aria-labelledby="tenxion-gallery-title">
+              <div class="gallery-project-heading">
+                <h3 id="tenxion-gallery-title">Tenxion / Luminox <span>05—10</span></h3>
+                <p>Event graphics for high-school events, created while at university. Captions reflect visible content; no specific design role is assigned.</p>
+              </div>
+              <div class="gallery-grid">
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/campus-talk-tenxion-stage.webp" alt="Tenxion Campus Talk stage visual with red curtains, spotlights, a blue background, and a microphone" width="1280" height="720" loading="lazy" />
+                  <figcaption><span>Campus Talk · Stage visual</span><span>Tenxion</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/campus-talk-tenxion-story.webp" alt="Vertical Instagram Story template for Tenxion Campus Talk, with a stage, spotlights and microphones around an open central area for content" width="1012" height="1800" loading="lazy" />
+                  <figcaption><span>Campus Talk · Story template</span><span>Tenxion</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/campus-talk-tenxion-poster.webp" alt="Tenxion Campus Talk poster for an online Zoom event, Monday 19 January, 10.25 AM to 12.05 PM" width="1048" height="1482" loading="lazy" />
+                  <figcaption><span>Campus Talk · Online via Zoom</span><span>Monday 19 January</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/luminox-zoom-background.webp" alt="Luminox virtual background with a central dark space, colorful disco balls, and glowing blue, purple and white lights" width="1280" height="720" loading="lazy" />
+                  <figcaption><span>Luminox · Zoom background</span><span>Virtual event visual</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/luminox-new-year-poster.webp" alt="Luminous Night of Tenxion New Year poster for an online Zoom event on 6 January 2026 at 9 PM" width="935" height="1323" loading="lazy" />
+                  <figcaption><span>Luminous Night of Tenxion New Year</span><span>6 Jan 2026 · Zoom · 9 PM</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/luminox-zoom-live-report.webp" alt="Luminox live-report visual showing screenshots of attendees in a Zoom event, framed by colorful disco-ball graphics" width="1012" height="1800" loading="lazy" />
+                  <figcaption><span>Luminox · Zoom live report</span><span>Event documentation</span></figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="gallery-project" data-project="maja" aria-labelledby="maja-gallery-title">
+              <div class="gallery-project-heading">
+                <h3 id="maja-gallery-title">PT Makara Mas · Maja <span>11—18</span></h3>
+                <p>Instagram content made during the internship, from DUIT app tutorials and financial-literacy posts to quiz, teaser, and interactive campaign graphics. Images are shown as supplied.</p>
+              </div>
+              <div class="gallery-grid">
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/maja-duit-ebook-tutorial.webp" alt="DUIT e-book tutorial graphic with a student holding a phone showing the DUIT app" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>DUIT · E-book tutorial</span><span>App guide</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/maja-duit-expense-tutorial.webp" alt="DUIT app tutorial graphic explaining step by step how to enter an expense" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>DUIT · Expense-entry tutorial</span><span>Step by step</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/maja-snack-vs-expenses.webp" alt="Illustration contrasting needs and wants, with a question about pocket money running out at the start of the month" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>Uang saku · Needs vs. wants</span><span>Financial literacy</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/maja-duit-quiz-winners.webp" alt="DUIT Quiz Winner congratulations graphic featuring three winner photos and a thank-you message" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>Kuis DUIT · Winner announcement</span><span>Community post</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/maja-financial-literacy-allowance.webp" alt="Financial-literacy graphic asking Jujur, Ngatur Uang Jajan Itu Kadang Susah Kan? with illustrations of snacks and makeup" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>Financial literacy · Pocket-money habits</span><span>Educational content</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/maja-campaign-countdown-20-days.webp" alt="Blue campaign countdown graphic reading 20 Hari Lagi with a teaser message about a coming surprise" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>Campaign countdown · 20 days</span><span>Teaser post</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/maja-dilema-santri.webp" alt="Dilema Santri illustration of a student thinking about a choice, with scales and question marks" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>Dilema Santri · Question graphic</span><span>Series content</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/maja-new-clue.webp" alt="New Clue from Maja teaser graphic with a starburst, Maja branding, and an illustrated character" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>New Clue from Maja</span><span>Teaser visual</span></figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="gallery-project" data-project="pbs" aria-labelledby="pbs-gallery-title">
+              <div class="gallery-project-heading">
+                <h3 id="pbs-gallery-title">PT Pelangi Bintang Semesta <span>19—21</span></h3>
+                <p>Three visuals from an ongoing internship that began 1 October 2026, featuring brand identity, a commemorative post, and import-policy information.</p>
+              </div>
+              <div class="gallery-grid">
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/pbs-guiding-compliance-growth.webp" alt="PT Pelangi Bintang Semesta visual with the phrase Guiding Compliance, Enabling Growth and the PBS logo" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>“Guiding Compliance, Enabling Growth”</span><span>PBS brand visual</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/pbs-hari-kesaktian-pancasila-2026.webp" alt="Hari Kesaktian Pancasila commemorative visual dated 1 October 2026, with a Garuda statue and historical figures" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>Hari Kesaktian Pancasila</span><span>1 Oct 2026</span></figcaption>
+                </figure>
+                <figure class="gallery-card reveal">
+                  <img class="gallery-image" src="assets/pbs-permendag-18-2026-import-policy.webp" alt="Information graphic titled Permendag 18/2026 Terbit: 3 Perubahan Penting Kebijakan Impor, listing surveyor-report rules, electronic-data validation, and import-realization sanctions" width="1080" height="1350" loading="lazy" />
+                  <figcaption><span>Permendag 18/2026 · Import policy</span><span>3 key changes</span></figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
 
       <section class="skills-section" id="skills">
         <div class="section-shell skills-layout">
           <div class="section-heading reveal">
-            <div class="section-index">03 — / Professional Skills</div>
-            <h2>Tools for<br /><em>the story.</em></h2>
+            <div class="section-index"><span>04</span> / Toolkit</div>
+            <div>
+              <p class="section-kicker">What I bring to the table</p>
+              <h2>A few tools<br /><em>for the story.</em></h2>
+            </div>
           </div>
           <div class="skills-content reveal">
             <p class="skills-intro">Combining curiosity, technical skills, and an eye for detail to create communication that feels clear and human.</p>
             <div class="skill-list">
-              <div class="skill-row"><span>01</span><strong>Public Relations</strong><i>✦</i></div>
-              <div class="skill-row"><span>02</span><strong>Event Documentation</strong><i>✦</i></div>
-              <div class="skill-row"><span>03</span><strong>Visual Design</strong><i>✦</i></div>
-              <div class="skill-row"><span>04</span><strong>Content Preparation</strong><i>✦</i></div>
-              <div class="skill-row"><span>05</span><strong>Publication Design</strong><i>✦</i></div>
+              <div class="skill-row"><span>01</span><strong>Public Relations</strong><i aria-hidden="true">✳</i></div>
+              <div class="skill-row"><span>02</span><strong>Event Documentation</strong><i aria-hidden="true">✳</i></div>
+              <div class="skill-row"><span>03</span><strong>Visual Design</strong><i aria-hidden="true">✳</i></div>
+              <div class="skill-row"><span>04</span><strong>Content Preparation</strong><i aria-hidden="true">✳</i></div>
+              <div class="skill-row"><span>05</span><strong>Publication Design</strong><i aria-hidden="true">✳</i></div>
             </div>
-            <div class="tool-badges"><span>Canva</span><span>CapCut</span><span>UI / UX</span><span>Digital Content</span></div>
+            <div class="tool-badges" aria-label="Tools and interests"><span>Canva</span><span>CapCut</span><span>UI / UX</span><span>Digital Content</span></div>
           </div>
         </div>
       </section>
 
-      <section class="section-shell education-section">
-        <div class="section-index">04 — / Education</div>
+      <section class="section-shell education-section" id="education">
+        <div class="section-heading reveal">
+          <div class="section-index"><span>05</span> / Education</div>
+          <div>
+            <p class="section-kicker">Still figuring things out</p>
+            <h2>Always in<br /><em>progress.</em></h2>
+          </div>
+        </div>
         <div class="education-grid">
           <article class="education-card reveal">
-            <span class="edu-year">2025 — Present</span>
-            <span class="edu-symbol">↗</span>
+            <span class="edu-year">Aug 2025 — Present</span>
+            <span class="edu-symbol" aria-hidden="true">↗</span>
             <p class="item-type">Bachelor’s Degree</p>
             <h3>Informatics Engineering</h3>
             <p>Universitas Islam Negeri Jakarta</p>
@@ -167,23 +407,34 @@
           </article>
           <article class="education-card reveal">
             <span class="edu-year">2023 — 2025</span>
-            <span class="edu-symbol">↗</span>
+            <span class="edu-symbol" aria-hidden="true">↗</span>
             <p class="item-type">Science Major — IPA</p>
             <h3>SMA Sulthon Aulia</h3>
             <p>Boarding School</p>
             <small>Communication · Documentation · Organization</small>
           </article>
         </div>
+        <div class="cv-extras">
+          <div class="cv-extra">
+            <p class="item-type">Certifications listed in CV</p>
+            <p>Graduate of Muballigh-Muballighot Program · Weekly Class UI/UX — GDGoC UIN Jakarta 25.26 · AIESEC Future Leaders WP 25 — Delegate</p>
+          </div>
+          <div class="cv-extra">
+            <p class="item-type">Languages</p>
+            <p>Indonesian · English</p>
+          </div>
+        </div>
       </section>
 
       <section class="contact-section" id="contact">
         <div class="section-shell contact-inner reveal">
-          <div class="section-index">05 — / Contact</div>
+          <div class="contact-sticker" aria-hidden="true">LET’S<br />MAKE<br />SOMETHING<br /><span>✳</span></div>
+          <div class="section-index"><span>06</span> / Your turn</div>
           <p class="section-kicker">Have an idea in mind?</p>
           <h2>Let’s make it<br /><em>meaningful.</em></h2>
           <p class="contact-note">Open to collaborations, creative conversations, and new opportunities.</p>
-          <a class="button button-light" href="mailto:serrafona@gmail.com">Contact Me <span>↗</span></a>
-          <div class="contact-links">
+          <a class="button button-light" href="mailto:serrafona@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+          <div class="contact-links" aria-label="Contact links">
             <a href="mailto:serrafona@gmail.com">serrafona@gmail.com</a>
             <a href="tel:+62811838399">+62 811-8382-399</a>
             <a href="https://www.linkedin.com/in/alexa-serrafona-juliet/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
@@ -194,7 +445,7 @@
 
     <footer class="site-footer section-shell">
       <span>© 2026 Alexa Serrafona Juliet</span>
-      <span>Designed with intention <b>✦</b></span>
+      <span>Made with curiosity <b aria-hidden="true">✳</b></span>
       <a href="#top">Back to top ↑</a>
     </footer>
     <script src="script.js"></script>
